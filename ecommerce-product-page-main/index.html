@@ -1,44 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link href="/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-img-ul">
+        <img src="/ecommerce-product-page-main/images/logo.svg" alt="" />
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-cart-avatar">
+        <a href="#">
+          <img
+            class="cart"
+            src="/ecommerce-product-page-main/images/icon-cart.svg"
+            alt=""
+        /></a>
+        <div id="cart-modal-container">
+          <h3>Cart</h3>
+          <div class="cart-item-flex">
+            <p>Your cart is empty</p>
+              <!-- <img src="/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="" width="40" height="40">
+            
+            <div>
+              <h5>Fall Limited Edition Sneakers</h5>
+              <p id="cart-price-total"></p>
+              
+            </div>
+            <div>
+              <a href="#">
+                <img class="trash" src="/ecommerce-product-page-main/images/icon-delete.svg" alt="">
+              </a>
+            </div> -->
+          </div>
+          <!-- <div>
+            <button>Checkout</button>
+          </div> -->
+        </div>
+        <span class="cart-item-count"></span>
+        <a href="#">
+          <img
+            class="avatar"
+            src="/ecommerce-product-page-main/images/image-avatar.png"
+            alt=""
+        /></a>
+      </div>
+    </nav>
 
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <main>
+      <section class="gallery-container">
+        
+          <img class="mainImg" src="/ecommerce-product-page-main/images/image-product-1.jpg" alt="">
+        
+        <div class="gallery-image-thumbnails">
+          <img class="img active" src="/ecommerce-product-page-main/images/image-product-1.jpg" alt="">
+          <img class="img" src="/ecommerce-product-page-main/images/image-product-2.jpg" alt="">
+          <img class="img" src="/ecommerce-product-page-main/images/image-product-3.jpg" alt="">
+          <img class="img" src="/ecommerce-product-page-main/images/image-product-4.jpg" alt="">
+        </div>
+      </section>
+      <div id="Lightbox" class="modal">
+        <div class="modal-content">
+        <div class="slide">
+          <img src="/ecommerce-product-page-main/images/image-product-1.jpg" class="image-slide" alt="Toy car on the road." />
+        </div>
+        <div class="slide">
+          <img src="/ecommerce-product-page-main/images/image-product-2.jpg" class="image-slide" alt="Toy car exploring offroad." />
+        </div>
+        <div class="slide">
+          <img src="/ecommerce-product-page-main/images/image-product-3.jpg" class="image-slide" alt="Toy car in the city." />
+        </div>
+        <div class="slide">
+          <img src="/ecommerce-product-page-main/images/image-product-4.jpg" class="image-slide" alt="Toy car in the city." />
+        </div>
+      </div>
+      </div>
+      <section class="gallery-details-container">
+        <span>SNEAKER COMPANY</span>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div>
+          <p>$125.00</p>
+          <p>50%</p>
+          <p>$250.00</p>
+        </div>
+        <div>
+          <button>-</button>
+          <span>0</span>
+          <button>+</button>
+        </div>
+        <div>
+          <button>Cart button</button>
+        </div>
+      </section>
+    </main>
+    <script src="/ecommerce-product-page-main/script.js"></script>
+  </body>
 </html>
